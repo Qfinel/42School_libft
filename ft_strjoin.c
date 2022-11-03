@@ -6,7 +6,7 @@
 /*   By: jtsizik <jtsizik@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 18:55:50 by jtsizik           #+#    #+#             */
-/*   Updated: 2022/10/15 10:36:32 by jtsizik          ###   ########.fr       */
+/*   Updated: 2022/11/03 12:17:41 by jtsizik          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	i = 0;
 	j = 0;
 	str = (char *)malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
-	if (!str)
+	if (!str || !s1 || !s2)
 		return (NULL);
 	while (s1[j])
 	{
